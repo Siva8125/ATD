@@ -6,12 +6,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.spring.web.mvc.AirlineProjectJava20.bean.Loginbean;
+
 
 @Controller
 public class CropController {
-	@RequestMapping(value = "UserLoginRequest",method = RequestMethod.POST)
-	public ModelAndView readLogin(@ModelAttribute("UserObj")Bean lb) {
+	@RequestMapping(value = "costcrop",method = RequestMethod.POST)
+	public ModelAndView cost(@ModelAttribute("cost")Bean lb) {
 		
 		int n=0;
 		int n1=0;
