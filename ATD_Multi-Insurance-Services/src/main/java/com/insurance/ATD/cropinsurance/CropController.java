@@ -1,5 +1,8 @@
 package com.insurance.ATD.cropinsurance;
 
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -8,14 +11,29 @@ import org.springframework.web.servlet.ModelAndView;
 
 
 
+
+
 @Controller
 public class CropController {
+	@Autowired
+	Service service;
+	@RequestMapping(value="crophome")
+	public String home() {
+		String  views="CropHome";
+		return views;
+	}
+	@RequestMapping(value="cropcost")
+	public String cost() {
+		String  views="Cropcostestimation";
+		return views;
+	}
 	@RequestMapping(value = "costcrop",method = RequestMethod.POST)
 	public ModelAndView cost(@ModelAttribute("cost")Bean lb) {
 		
 		int n=0;
 		int n1=0;
 		int n2=lb.getPremiumrate();
+	List<Bean>	result=null;
 		ModelAndView mav = new ModelAndView();
 		String s=lb.getCropname();
 		if(s.equalsIgnoreCase("paddy")) {
@@ -47,6 +65,13 @@ public class CropController {
 		
 		int i=(n2/100)*n;
 		int r=i*n1;
+		lb.setTotalcost(r);
+		
+	
+		
+		
+			mav.setViewName("showcost");
+			mav.addObject("costestimated",lb);
 		
 		return mav;
 	}
