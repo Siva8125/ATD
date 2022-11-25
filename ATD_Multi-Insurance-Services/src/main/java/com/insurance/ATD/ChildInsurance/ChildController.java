@@ -1,5 +1,7 @@
 package com.insurance.ATD.ChildInsurance;
 
-public class ChildController {
+public class ChildController 
+{
+	
 
 }
