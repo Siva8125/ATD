@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8"
+<meta charset="UTF-8">
 
 
 <title>Home</title>
@@ -44,7 +44,7 @@
 <tr><td>For protecting your mobile:</td>
 <td><button>Mobile Insurance</button></td></tr>
 <tr><td>For protecting your gold:</td>
-<td><button>Gold Insurance</button></td></tr>
+<td><button><a href="GoldInsurance">Gold Insurance</a></button></td></tr>
 <tr><td>For protecting your hotel:</td>
 <td><button>Hotel Insurance</button></td></tr>
 <tr><td>For protecting your crop:</td>

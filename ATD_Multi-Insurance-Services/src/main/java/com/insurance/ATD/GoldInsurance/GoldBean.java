@@ -9,19 +9,21 @@ import javax.persistence.Table;
 @Table(name="GoldBean")
 public class GoldBean {
 	@Id
-	@Column(name = "PolicyNumber")
-	private int policynumber;
+	@Column(name="Policynumber")
+	private int Policynumber;
 	@Column(name="Materials")
 	private String Materials;
 	@Column(name="Amount")
-	private int amount;
+	private int Amount;
 	@Column(name="Tenure")
 	private int Tenure;
+	@Column(name="Percentage")
+	private int Percentage;
 	public int getPolicynumber() {
-		return policynumber;
+		return Policynumber;
 	}
 	public void setPolicynumber(int policynumber) {
-		this.policynumber = policynumber;
+		Policynumber = policynumber;
 	}
 	public String getMaterials() {
 		return Materials;
@@ -30,16 +32,22 @@ public class GoldBean {
 		Materials = materials;
 	}
 	public int getAmount() {
-		return amount;
+		return Amount;
 	}
 	public void setAmount(int amount) {
-		this.amount = amount;
+		Amount = amount;
 	}
 	public int getTenure() {
 		return Tenure;
 	}
 	public void setTenure(int tenure) {
 		Tenure = tenure;
+	}
+	public int getPercentage() {
+		return Percentage;
+	}
+	public void setPercentage(int percentage) {
+		Percentage = percentage;
 	}
 	
 
