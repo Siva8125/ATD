@@ -11,6 +11,9 @@ Calculate Your Claim Amount:
 <table>
 <tr><td>${homebean}</td></tr>
 </table>
+<table>
+<tr><td>${calculation}</td></tr>
+</table>
 <form action="claimcalculation" method="post">
 				Age of House:<input type="text" name="Ageofhouse">
 				House Value:<input type="text" name="Housevalue"> 
@@ -18,7 +21,8 @@ Calculate Your Claim Amount:
 				Claim Amount:<input type="text" name="Claimamount"> 
 			<input type="submit" name="Submit">
 	</form>
-		<td><button><a href="customers">Home Insurance</button></td></tr>
+	<table><tr>
+		<td><button><a href="customers">Home Insurance</a></button></td></tr>
 	</table>
 </body>
 </html>

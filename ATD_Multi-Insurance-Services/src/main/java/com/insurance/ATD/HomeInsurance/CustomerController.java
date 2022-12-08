@@ -69,9 +69,8 @@ public class CustomerController {
 	@PostMapping(value="claimcalculation")
 	public String claimcalculation(Homecalculation calculation) {
 		repo2.save(calculation);
-		return "homeconstructionpolicy";
-				
-		
+		return "homeconstructionpolicyentry";
+			
 	}
 		
 }
